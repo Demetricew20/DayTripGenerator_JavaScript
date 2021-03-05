@@ -4,8 +4,8 @@
 
 let destinationArray = ["Seward", "Nome", "Juneau", "Anchorage"];
 let restaurantArray = ["Sullivan's Steakhouse", "Alaska Seafood Grill", "Husky Restaurant", "The Hangar On The Wharf"];
-let transportationArray = ["Car", "Plane", "Boat", "Bicycle"];
-let entertainmentArray = ["attempt an escape room", "go to the movies", "go to wildlife conservation", "go sledding"];
+let transportationArray = ["Car", "Plane", "Boat", "Alaska Railroad"];
+let entertainmentArray = ["Attempt An Escape Room", "Go To The Movies", "Go To Wildlife Conservation", "Go Sledding"];
 
 // Functions to create random day trip
 
@@ -80,15 +80,14 @@ function randomizeEntertainment()
             return "Error. Please try again."
     }
 }
+// Event Listeners
+
+//Random Button Function
+const randomClick = document.getElementById("random-button").addEventListener("click", function(){
+    document.getElementById("destination-input").value = randomizeDestination();
+    document.getElementById("entertainment-input").value = randomizeEntertainment();
+    document.getElementById("restaurant-input").value = randomizeRestaurant();
+    document.getElementById("transportation-input").value = randomizeTransportation();
+});
 
 
-
-
-
-
-randomizeDestination();
-randomizeRestaurant();
-randomizeTransportation();
-randomizeEntertainment();
-
-console.log(`Destination: ${randomizeDestination()}, Restaurant: ${randomizeRestaurant()}, Transportation: ${randomizeTransportation()}, Entertainment: ${randomizeEntertainment()} `);
