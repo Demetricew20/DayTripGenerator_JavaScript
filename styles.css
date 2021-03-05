@@ -6,6 +6,8 @@
 body {
     border: 5px solid red;
     background-color: grey;
+    background-image: url("1094224.jpg");
+    margin: auto;
 }
 
 div {
@@ -31,7 +33,7 @@ form {
 label {
     display: inline-flex;
     position: absolute;
-    margin-left: 0px;
+    margin-left: -5px;
     margin-top: 5px;
 }
 
@@ -46,13 +48,21 @@ button {
     display: inline-flex;
     margin: auto;
     position: relative;
-    top: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    bottom: 10px;
 }
 
-/* PLAN YOUR DAY FORM  */
+/* Plan Your Day form  */
 
 #personalize-trip-form {
     position: absolute;
     top: 0px;
     right: -1px;
+}
+
+#plan-your-day-title {
+    position: relative;
+    margin: 20px 10px 50px 25px;
+    font-size: 25px;
 }

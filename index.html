@@ -10,8 +10,7 @@
 <body>
     <div id="container">
         <form action="" id="day-trip-form">
-            <button type="button" id="random-button">RANDOMIZE</button><br><br>
-            <button type="reset-button" id="reset-button">RESET</button><br><br>
+            <label id="plan-your-day-title">PLAN YOUR TRIP</label><br>
             <label for="destination">Destination:</label>
             <input type="text" id="destination-input" size="23"readonly></input><br>
             <label for="transportation">Transportation:</label>
@@ -20,22 +19,30 @@
             <input type="text" id="entertainment-input" size="23" readonly><br>
             <label for="restaurant">Restaurant:</label>
             <input type="text" id="restaurant-input" size="23" readonly><br>
-            <button id="confimation-button">CONFIRM TRIP!</button>
+            <button type="button" id="random-button">RANDOMIZE</button>
+            <button type="reset-button" id="reset-button">RESET</button><br><br>
+            <button id="confirm-button">CONFIRM TRIP!</button>
         </form>
         <form action="" id="personalize-trip-form">
-            <button type="button" id="random-button">PLAN YOUR DAY</button><br><br>
-            <button type="reset-button" id="reset-button">RESET</button><br><br>
+            <label id="plan-your-day-title">PLAN YOUR TRIP</label><br>
             <label for="destination">Destination:</label>
-            <input type="text" id="destination-input" size="23"readonly></input><br>
+            <input type="text" id="destination-user" size="23"></input><br>
             <label for="transportation">Transportation:</label>
-            <input type="text" id="transportation-input" size="23" readonly><br>
+            <input type="text" id="transportation-user" size="23" ><br>
             <label for="entertainment">Entertainment:</label>
-            <input type="text" id="entertainment-input" size="23" readonly><br>
+            <input type="text" id="entertainment-user" size="23" ><br>
             <label for="restaurant">Restaurant:</label>
-            <input type="text" id="restaurant-input" size="23" readonly><br>
-            <button id="confimation-button">CONFIRM TRIP!</button>
+            <input type="text" id="restaurant-user" size="23" ><br>
+            <button type="reset-button" id="reset-button">RESET</button><br><br>
+            <button id="confirm-button-user">CONFIRM TRIP!</button>
         </form>
     </div>
+
+    <article>
+        <footer>
+          <small><!-- free image received from wallpaperaccess.com --></small>
+        </footer>
+      </article>
 
     <script src="daytripgenerator.js"></script>
 </body>

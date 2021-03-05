@@ -89,3 +89,25 @@ const randomClick = document.getElementById("random-button").addEventListener("c
     document.getElementById("restaurant-input").value = randomizeRestaurant();
     document.getElementById("transportation-input").value = randomizeTransportation();
 });
+
+//Confirm Trip Button
+
+const confirmRandomPlanClick = document.getElementById('confirm-button').addEventListener("click", function(){
+    console.log(`User Trip == 
+Destination:${document.getElementById('destination-input').value},
+Transportation:${document.getElementById('transportation-input').value},
+Entertainment:${document.getElementById('entertainment-input').value},
+Restaurant:${document.getElementById('restaurant-input').value}`)
+;
+    alert("Trip Confirmed! Enjoy your day in the Last Frontier!");
+});
+
+const confirmUserPlanClick = document.getElementById('confirm-button-user').addEventListener("click", function(){
+    console.log(`User Trip == 
+Destination:${document.getElementById('destination-user').value},
+Transportation:${document.getElementById('transportation-user').value},
+Entertainment:${document.getElementById('entertainment-user').value},
+Restaurant:${document.getElementById('restaurant-user').value}`)
+;
+    alert("Trip Confirmed! Enjoy your day in the Last Frontier!");
+});
