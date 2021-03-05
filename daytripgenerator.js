@@ -5,7 +5,7 @@
 let destinationArray = ["Seward", "Nome", "Juneau", "Anchorage"];
 let restaurantArray = ["Sullivan's Steakhouse", "Alaska Seafood Grill", "Husky Restaurant", "The Hangar On The Wharf"];
 let transportationArray = ["Car", "Plane", "Boat", "Alaska Railroad"];
-let entertainmentArray = ["Attempt An Escape Room", "Go To The Movies", "Go To Wildlife Conservation", "Go Sledding"];
+let entertainmentArray = ["Attempt An Escape Room", "Go To The Movies", "Go To Wildlife Conservation", "Visit Museum"];
 
 // Functions to create random day trip
 
@@ -89,5 +89,3 @@ const randomClick = document.getElementById("random-button").addEventListener("c
     document.getElementById("restaurant-input").value = randomizeRestaurant();
     document.getElementById("transportation-input").value = randomizeTransportation();
 });
-
-
