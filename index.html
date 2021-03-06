@@ -34,13 +34,37 @@
         <form action="" id="personalize-trip-form">
             <label id="plan-your-day-title">Plan Your Trip</label><br>
             <label for="destination">Destination:</label>
-            <input type="text" id="destination-user" size="23"></input><br>
+            <input list="destinations-list" id="destination-user" size="23"></input><br>
+            <datalist id="destinations-list">
+                <option id="location-1" value=""></option>
+                <option id="location-2" value=""></option>
+                <option id="location-3" value=""></option>
+                <option id="location-4" value=""></option>
+            </datalist>
             <label for="transportation">Transportation:</label>
-            <input type="text" id="transportation-user" size="23" ><br>
+            <input list="transportation-list" type="text" id="transportation-user" size="23" ><br>
+            <datalist id="transportation-list">
+                <option id="transportation-1" value=""></option>
+                <option id="transportation-2" value=""></option>
+                <option id="transportation-3" value=""></option>
+                <option id="transportation-4" value=""></option>
+            </datalist>
             <label for="entertainment">Entertainment:</label>
-            <input type="text" id="entertainment-user" size="23" ><br>
+            <input list="entertainment-list" type="text" id="entertainment-user" size="23" ><br>
+            <datalist id="entertainment-list">
+                <option id="entertainment-1" value=""></option>
+                <option id="entertainment-2" value=""></option>
+                <option id="entertainment-3" value=""></option>
+                <option id="entertainment-4" value=""></option>
+            </datalist>
             <label for="restaurant">Restaurant:</label>
-            <input type="text" id="restaurant-user" size="23" ><br>
+            <input list="restaurant-list" type="text" id="restaurant-user" size="23" ><br>
+            <datalist id="restaurant-list">
+                <option id="restaurant-1" value=""></option>
+                <option id="restaurant-2" value=""></option>
+                <option id="restaurant-3" value=""></option>
+                <option id="restaurant-4" value=""></option>
+            </datalist>
             <button type="reset-button" class="plan-your-day-buttons">RESET</button><br><br>
             <button class="plan-your-day-buttons" id="confirm-button-user">CONFIRM TRIP!</button>
         </form>

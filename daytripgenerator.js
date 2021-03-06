@@ -80,6 +80,41 @@ function randomizeEntertainment()
             return "Error. Please try again."
     }
 }
+
+/// ASSIGN DROPDOWN OPTIONS
+// Destination
+
+let sortedDestination = destinationArray.sort();
+
+document.getElementById("location-1").value = sortedDestination[0];
+document.getElementById("location-2").value = sortedDestination[1];
+document.getElementById("location-3").value = sortedDestination[2];
+document.getElementById("location-4").value = sortedDestination[3];
+
+// Transportation
+let sortedTransportation = transportationArray.sort();
+
+document.getElementById("transportation-1").value = transportationArray[0];
+document.getElementById("transportation-2").value = transportationArray[1];
+document.getElementById("transportation-3").value = transportationArray[2];
+document.getElementById("transportation-4").value = transportationArray[3];
+
+// Entertainment
+let sortedEntertainment = entertainmentArray.sort();
+
+document.getElementById("entertainment-1").value = sortedEntertainment[0];
+document.getElementById("entertainment-2").value = sortedEntertainment[1];
+document.getElementById("entertainment-3").value = sortedEntertainment[2];
+document.getElementById("entertainment-4").value = sortedEntertainment[3];
+
+// Restaurant
+let sortedRestaurant = restaurantArray.sort();
+
+document.getElementById("restaurant-1").value = sortedRestaurant[0];
+document.getElementById("restaurant-2").value = sortedRestaurant[1];
+document.getElementById("restaurant-3").value = sortedRestaurant[2];
+document.getElementById("restaurant-4").value = sortedRestaurant[3];
+
 // Event Listeners
 
 //Random Button Function
