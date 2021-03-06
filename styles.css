@@ -10,6 +10,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgb(55, 101, 128);
+    overflow: hidden;
 }
 
 h1 {
@@ -30,6 +31,7 @@ h1 {
     width: 100%;
     height: 100%;
     left: .15em;
+    z-index: 0;
 }
 
 #title-img {
@@ -38,6 +40,13 @@ h1 {
     top: 50%;
     right: 45%;
 }
+
+/* #plane-img{
+    z-index: 1;
+    position: relative;
+    top: -150px;
+    left: -700px;
+} */
 
 #first-section {
     position: absolute;

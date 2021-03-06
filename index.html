@@ -8,11 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alaska Day Trip</title>
 </head>
-<body>
+<body id='body' onload="init();">
     <img src="/alaska-scenery.jpg" alt="Alaska Denali Park" id="background-img" >
     <h1>Enjoy Alaska</h1>
-    <div>
-        <img src="/alaska-map.png" alt="" id="title-img">
+    <div id="top-images" onclick="moveRight();">
+        <img src="/alaska-map.png" alt="Map of Alaska" id="title-img">
+        <img src="/plane.png" alt="Plane image" id="plane-img" >
     </div>
     <div id="first-section">
         <form action="" id="day-trip-form">
@@ -26,7 +27,7 @@
             <label for="restaurant">Restaurant:</label>
             <input type="text" id="restaurant-input" size="23" readonly><br>
             <button type="button" class="randomizer-buttons" id="random-button">RANDOMIZE</button>
-            <button type="reset-button" class="randomizer-buttons">RESET</button><br><br>
+            <button id="reset-button" type="reset-button" class="randomizer-buttons">RESET</button><br><br>
             <button id="confirm-button" class="randomizer-buttons">CONFIRM TRIP!</button>
         </form>
     </div>
@@ -65,7 +66,7 @@
                 <option id="restaurant-3" value=""></option>
                 <option id="restaurant-4" value=""></option>
             </datalist>
-            <button type="reset-button" class="plan-your-day-buttons">RESET</button><br><br>
+            <button id="reset-button" type="reset-button" class="plan-your-day-buttons">RESET</button><br><br>
             <button class="plan-your-day-buttons" id="confirm-button-user">CONFIRM TRIP!</button>
         </form>
     </div>
@@ -76,6 +77,7 @@
         </footer>
       </article> -->
 
-    <script src="daytripgenerator.js"></script>
+    <script src="daytripgenerator.js">
+    </script>
 </body>
 </html>

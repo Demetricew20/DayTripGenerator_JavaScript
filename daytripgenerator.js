@@ -146,3 +146,50 @@ Restaurant:${document.getElementById('restaurant-user').value}`)
 ;
     alert("Trip Confirmed! Enjoy your day in the Last Frontier!");
 });
+
+// Reset Button
+
+function reset(){
+    document.getElementById("destination-input").value = "";
+    document.getElementById("entertainment-input").value = "";
+    document.getElementById("restaurant-input").value = "";
+    document.getElementById("transportation-input").value = "";
+}
+
+/// Plane Animations
+
+let body = document.getElementById('body');
+let plane = document.getElementById('plane-img');
+
+var animate, left=0, start=Date.now();
+
+function init(){
+
+   plane.style.position= 'relative';
+   plane.style.top = '-150px';
+   plane.style.left = '-700px';
+   plane.style.visibility='hidden';
+
+   moveRight();
+}
+
+function moveRight(){
+    let left = parseInt(plane.style.left, 10);
+    let timePassed = Date.now() - start;
+
+    if (2040 >= left) {
+        plane.style.animationDelay= "5s";
+        plane.style.left = (left + 5) + 'px';
+        plane.style.visibility='visible';
+
+        let animate = setTimeout(function(){moveRight();},20); // call moveRight in 20msec
+    } 
+    else if (document.getElementById('reset-button') === true){
+        clearTimeout(animate);
+    }
+    else {
+        clearTimeout(animate);
+    }
+}
+
+window.onload = function() {init();};
