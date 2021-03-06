@@ -36,7 +36,7 @@ h1 {
     z-index: 1;
     position: absolute;
     top: 50%;
-    right: 42%;
+    right: 45%;
 }
 
 #first-section {
@@ -75,15 +75,15 @@ form{
     position: relative;
     font-size: 4vh;
     margin-top: 7%;
-    margin-bottom: 10%;
+    margin-bottom: 7%;
     margin-right: 10%;
 }
 
 #plan-your-day-title {
     position: relative;
-    font-size: 1.50vw;
+    font-size: 4vh;
     margin-top: 7%;
-    margin-bottom: 10%;
+    margin-bottom: 7%;
     margin-right: 10%;
 }
 
@@ -93,7 +93,6 @@ label {
     display: inline-flex;
     position: absolute;
     left: 5%;
-
     font-size: 2.25vh;
 }
 
@@ -104,13 +103,36 @@ input {
     text-align: center;
 }
 
-button {
+.randomizer-buttons {
     display: inline-flex;
-    margin: auto;
     position: relative;
-    border: 1px solid black;
-    border-radius: 5px;
-    bottom: 10px;
+    margin-top: 1.2%;
+    margin-left: 5%;
+    padding: 5%;
+    bottom: 7.5%;
+    border: 2px solid black;
+    border-radius: .30em;
+    color: black;
+    background-color:  #7B9BD6;
+    text-align: center;
+    vertical-align: center;
+    font-weight: bold;
+    font-size: 1.5vh;
 }
 
+.plan-your-day-buttons {
+    display: inline-flex;
+    position: relative;
+    margin-bottom: 1%;
+    padding: 5%;
+    bottom: 6.5%;
+    border: 2px solid black;
+    border-radius: .30em;
+    color: black;
+    background-color:  #7B9BD6;
+    text-align: center;
+    vertical-align: center;
+    font-weight: bold;
+    font-size: 1.5vh;
+}
 
