@@ -175,14 +175,12 @@ function init(){
 
 function moveRight(){
     let left = parseInt(plane.style.left, 10);
-    let timePassed = Date.now() - start;
 
     if (2040 >= left) {
-        plane.style.animationDelay= "5s";
         plane.style.left = (left + 5) + 'px';
         plane.style.visibility='visible';
 
-        let animate = setTimeout(function(){moveRight();},20); // call moveRight in 20msec
+        animate = setTimeout(function(){moveRight();},20); // call moveRight in 20msec
     } 
     else if (document.getElementById('reset-button') === true){
         clearTimeout(animate);
