@@ -167,7 +167,7 @@ function init(){
 
    plane.style.position= 'relative';
    plane.style.top = '-150px';
-   plane.style.left = '-700px';
+   plane.style.left = '-1800px';
    plane.style.visibility='hidden';
 
    moveRight();
