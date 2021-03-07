@@ -165,12 +165,12 @@ var animate, left=0, start=Date.now();
 
 function init(){
 
-   plane.style.position= 'relative';
-   plane.style.top = '-150px';
-   plane.style.left = '-1800px';
-   plane.style.visibility='hidden';
+    plane.style.position= 'relative';
+    plane.style.top = '-150px';
+    plane.style.left = '-1800px';
+    plane.style.visibility='hidden';
 
-   moveRight();
+    moveRight();
 }
 
 function moveRight(){
