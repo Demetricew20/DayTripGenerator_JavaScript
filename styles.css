@@ -39,7 +39,9 @@ h1 {
     position: absolute;
     top: 50%;
     right: 45%;
+    transform: scale(1.5);
 }
+
 
 #first-section {
     position: absolute;
@@ -75,19 +77,21 @@ form{
 
 #randomizer-title {
     position: relative;
-    font-size: 4vh;
     margin-top: 7%;
     margin-bottom: 7%;
     margin-right: 10%;
+    font-size: 4vh;
+    font-family: 'Fjalla One', sans-serif;
 
 }
 
 #plan-your-day-title {
     position: relative;
-    font-size: 4vh;
     margin-top: 7%;
     margin-bottom: 7%;
     margin-right: 10%;
+    font-size: 4vh;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 label {
@@ -104,6 +108,12 @@ input {
     text-align: center;
 }
 
+button:hover {
+    background-color: #FFE600;
+    cursor: pointer;
+}
+
+
 .randomizer-buttons {
     display: inline-flex;
     position: relative;
@@ -119,6 +129,7 @@ input {
     vertical-align: center;
     font-weight: bold;
     font-size: 1.5vh;
+    transition: all .9s ease;
 }
 
 .plan-your-day-buttons {
